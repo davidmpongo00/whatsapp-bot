@@ -26,13 +26,13 @@ DEBUG =
 module.exports = {
   VERSION: "v1.2.8",
   SESSION:
-    process.env.ASENA_SESSION === undefined ? "" : process.env.ASENA_SESSION,
+    process.env.ASENA_SESSION === undefined ? "levanter_3f782846e82d44ac9916460b264054b14" : process.env.ASENA_SESSION,
   EXT: process.env.EXT === undefined ? undefined : process.env.EXT,
   LANG:
     process.env.LANGUAGE === undefined
-      ? "EN"
+      ? "Fr"
       : process.env.LANGUAGE.toUpperCase(),
-  HANDLERS: process.env.HANDLERS === undefined ? "^[.]" : process.env.HANDLERS,
+  HANDLERS: process.env.HANDLERS === undefined ? "^[+]" : process.env.HANDLERS,
   SEND_READ:
     process.env.SEND_READ === undefined
       ? false
@@ -49,7 +49,7 @@ module.exports = {
         : process.env.HEROKU_API_KEY,
     APP_NAME:
       process.env.HEROKU_APP_NAME === undefined
-        ? ""
+        ? "David bot"
         : process.env.HEROKU_APP_NAME,
   },
   DATABASE_URL: DATABASE_URL,
@@ -89,7 +89,7 @@ module.exports = {
   ANTIJID: process.env.ANTIJID === undefined ? "" : process.env.ANTIJID,
   STICKER_PACKNAME:
     process.env.STICKER_PACKNAME === undefined
-      ? "🥰,lyfe00011"
+      ? "🥰, David bot"
       : process.env.STICKER_PACKNAME,
   BRAINSHOP:
     process.env.BRAINSHOP === undefined
